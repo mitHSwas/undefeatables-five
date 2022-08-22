@@ -1,0 +1,25 @@
+function selectedBestFive(playerNameId) {
+    const selectedPlayers = document.getElementById("selected-players");
+    const playerName = document.getElementById(playerNameId).innerText;
+    const li = document.createElement("li");
+    li.innerText = playerName;
+    selectedPlayers.appendChild(li);
+}
+
+function clickSelectedBtn(btnId, nameId) {
+    document.getElementById(btnId).addEventListener("click", function () {
+        selectedBestFive(nameId);
+    })
+}
+clickSelectedBtn("btn-messi", "player-messi");
+clickSelectedBtn("btn-correa", "player-correa");
+clickSelectedBtn("btn-mbappe", "player-mbappe");
+clickSelectedBtn("btn-mauro", "player-mauro");
+clickSelectedBtn("btn-marseille", "player-marseille");
+clickSelectedBtn("btn-hakimi", "player-hakimi");
+clickSelectedBtn("btn-danilo", "player-danilo");
+clickSelectedBtn("btn-leandro", "player-leandro");
+clickSelectedBtn("btn-bernat", "player-bernat");
+clickSelectedBtn("btn-herrera", "player-herrera");
+clickSelectedBtn("btn-navas", "player-navas");
+clickSelectedBtn("btn-sergio", "player-sergio");

@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    height: 50%;
+    background-image: url(../images/hero-header.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.header-div {
+    padding: 100px;
+    margin-top: 80px;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.selected {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+}
