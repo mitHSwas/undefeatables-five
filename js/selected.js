@@ -3,7 +3,15 @@ function selectedBestFive(playerNameId) {
     const playerName = document.getElementById(playerNameId).innerText;
     const li = document.createElement("li");
     li.innerText = playerName;
-    selectedPlayers.appendChild(li);
+    const totalPlayer = document.getElementsByTagName("li").length;
+    if (totalPlayer < 5) {
+        selectedPlayers.appendChild(li);
+    }
+    else {
+        alert("You can not select more than five players.")
+        return;
+    }
+
 }
 
 function clickSelectedBtn(btnId, nameId) {
