@@ -27,7 +27,7 @@
                             <h5 id="player-messi" class="card-title text-center">Lional Messi</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-messi" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-messi" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
                 <div class="col">
@@ -37,7 +37,7 @@
                             <h5 id="player-correa" class="card-title text-center">Marquinhos Corrêa</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-correa" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-correa" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
                 <div class="col">
@@ -47,7 +47,7 @@
                             <h5 id="player-mbappe" class="card-title text-center">Kylian Mbappe</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-mbappe" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-mbappe" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
                 <div class="col">
@@ -67,7 +67,7 @@
                             <h5 id="player-mauro" class="card-title text-center"> Mauro Icard</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-mauro" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-mauro" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
                 <div class="col">
@@ -77,7 +77,7 @@
                             <h5 id="player-marseille" class="card-title text-center">Gueye Marseille</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-marseille" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-marseille" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
                 <div class="col">
@@ -87,7 +87,7 @@
                             <h5 id="player-hakimi" class="card-title text-center">Achraf Hakimi</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-hakimi" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-hakimi" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
                 <div class="col">
@@ -95,20 +95,24 @@
                         <h3 class="text-center mb-3">Budget</h3>
                         <div class="d-flex justify-content-between mb-2">
                             <label for="disabledTextInput" class="form-label">Per Player :</label>
-                            <input type="text" id="disabledTextInput" class="form-control w-50" value="1,000" disabled>
+                            <input id="per-player-budget" type="text" id="disabledTextInput" class="form-control w-50"
+                                value="1000" disabled>
                         </div>
-                        <button type="button" class="btn btn-primary selected">Calculate</button>
-                        <p>Player Expenses : $<span>0000</span></p>
+                        <button id="player-cost" type="button" class="btn btn-primary selected">Calculate</button>
+                        <p>Player Expenses : $<span id="player-total-cost">0000</span></p>
                         <div class="d-flex justify-content-between mb-2">
                             <label for="disabledTextInput" class="form-label">Manager :</label>
-                            <input type="text" id="disabledTextInput" class="form-control w-50" value="2,000">
+                            <input id="manager-cost" type="text" id="disabledTextInput" class="form-control w-50"
+                                value="2000">
                         </div>
                         <div class="d-flex justify-content-between mb-3">
                             <label for="disabledTextInput" class="form-label">Coach :</label>
-                            <input type="text" id="disabledTextInput" class="form-control w-50" value="4,000">
+                            <input id="coach-cost" type="text" id="disabledTextInput" class="form-control w-50"
+                                value="4000">
                         </div>
-                        <button type="button" class="btn btn-primary selected">Calculate Total</button>
-                        <p>Total Expenses : $<span>6000</span></p>
+                        <button id="btn-total-cost" type="button" class="btn btn-primary selected">Calculate
+                            Total</button>
+                        <p>Total Expenses : $<span id="total-cost">6000</span></p>
                     </div>
                 </div>
             </div>
@@ -120,7 +124,7 @@
                             <h5 id="player-danilo" class="card-title text-center">Danilo Pereira</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-danilo" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-danilo" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
                 <div class="col">
@@ -130,7 +134,7 @@
                             <h5 id="player-leandro" class="card-title text-center">Leandro Paredes</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-leandro" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-leandro" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
                 <div class="col">
@@ -140,7 +144,7 @@
                             <h5 id="player-bernat" class="card-title text-center">Juan Bernat</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-bernat" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-bernat" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
             </div>
@@ -152,7 +156,7 @@
                             <h5 id="player-herrera" class="card-title text-center">Ander Herrera</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-herrera" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-herrera" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
                 <div class="col">
@@ -162,7 +166,7 @@
                             <h5 id="player-navas" class="card-title text-center">Keylor Navas</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-navas" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-navas" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
                 <div class="col">
@@ -172,7 +176,7 @@
                             <h5 id="player-sergio" class="card-title text-center">Sergio Rico</h5>
                             <p class="text-center"><span>36 Goals</span> .<span>120 Assists</span></p>
                         </div>
-                        <button id="btn-sergio" type="button" class="btn btn-primary selected">Selected</button>
+                        <button id="btn-sergio" type="button" class="btn btn-primary selected">SELECT</button>
                     </div>
                 </div>
             </div>
@@ -183,5 +187,6 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script src="./js/selected.js"></script>
+    <script src="./js/budget.js"></script>
 </body>
 </html>

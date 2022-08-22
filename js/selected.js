@@ -16,6 +16,8 @@ function selectedBestFive(playerNameId) {
 
 function clickSelectedBtn(btnId, nameId) {
     document.getElementById(btnId).addEventListener("click", function () {
+        document.getElementById(btnId).classList.add("disabled");
+        document.getElementById(btnId).innerText = "SELECTED";
         selectedBestFive(nameId);
     })
 }
