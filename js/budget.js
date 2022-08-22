@@ -15,11 +15,12 @@ document.getElementById("btn-total-cost").addEventListener("click", function () 
     const totalPlayerCostAmount = parseInt(totalPlayerCostElement);
 
     const managerCostElement = document.getElementById("manager-cost").value;
+    console.log(typeof managerCostElement);
     const managerCostAmount = parseInt(managerCostElement);
 
     const coachCostElement = document.getElementById("coach-cost").value;
     const coachCostAmount = parseInt(coachCostElement);
-
+    console.log("love", coachCostAmount);
     const totalCostAmount = totalPlayerCostAmount + managerCostAmount + coachCostAmount;
     document.getElementById("total-cost").innerText = totalCostAmount;
 })

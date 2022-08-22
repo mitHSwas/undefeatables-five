@@ -20,3 +20,9 @@
     margin: auto;
     margin-bottom: 15px;
 }
+
+#selected-players li {
+    color: red;
+    margin: 2rem;
+    margin-left: 2rem;
+}
